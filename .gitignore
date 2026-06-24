@@ -1,0 +1,38 @@
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# ── Database ─────────────────────────────────────────────────
+*.sqlite3
+*.sqlite3-*
+*.sqlite3.bak
+*.db
+data/
+
+# ── Credentials & environment ────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Supabase integration tests ───────────────────────────────
+# Require python-dotenv + supabase SDK and contain project-specific
+# entity UUIDs. Run locally against a seeded Supabase project.
+# Not part of the public SQLite test suite.
+tests/test_compliance.py
+tests/test_concurrency.py
+
+# ── IDE & OS ──────────────────────────────────────────────────
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# ── Visual Studio project files ───────────────────────────────
+*.sln
+*.pyproj
